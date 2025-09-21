@@ -6,7 +6,7 @@ interface UserPageProps {
   posts: UserProps[];
 }
 
-const Users: React.FC<UserPageProps> = ({ posts }) => {
+const Users: React.FC<{ posts: UserProps[] }> = ({ posts }) => {
   return (
     <div className='min-h-screen bg-gray-100'>
       <Header />

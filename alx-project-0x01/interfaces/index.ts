@@ -29,9 +29,20 @@ export interface UserProps {
   name: string;
   username: string;
   email: string;
-  address: Address;  
+  address: Address;
   phone: string;
   website: string;
-  company: Company;  
+  company: Company;
 }
 
+export interface PostData {
+  userId: number;
+  id?: number;
+  title: string;
+  body: string;
+}
+
+export interface PostModalProps {
+  onClose: () => void;
+  onSubmit: (post: PostData) => void;
+}
