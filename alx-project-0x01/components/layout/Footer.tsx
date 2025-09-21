@@ -1,1 +1,1 @@
-const Footer: React.FC = () => {};
+import Link from 'next/link';
